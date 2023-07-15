@@ -7,3 +7,8 @@
 # To store/export single collection 
 => mongodump -d databaseName -c collectionName
 
+# To restore/import single database
+=> mongorestore -d satabaseName ./filePath
+
+# To restore/import single collection
+=> mongorestore -d satabaseName ./filePath/*.bson
