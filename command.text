@@ -1,3 +1,9 @@
+# To show all database 
+=> show dbs
+
+# To enter db
+=> use databaseName
+
 # To store/export all database
 => mongodump
 
