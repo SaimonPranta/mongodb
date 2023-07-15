@@ -4,6 +4,9 @@
 # To enter db
 => use databaseName
 
+# To delete database
+=> db.dropDatabase()
+
 # To store/export all database
 => mongodump
 
