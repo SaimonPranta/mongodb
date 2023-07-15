@@ -1,0 +1,6 @@
+# To store/export all database
+=> mongodump
+
+#To store/export single database
+=> mongodump -d databaseName
+
