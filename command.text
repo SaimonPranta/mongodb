@@ -1,6 +1,9 @@
 # To store/export all database
 => mongodump
 
-#To store/export single database
+# To store/export single database
 => mongodump -d databaseName
+
+# To store/export single collection 
+=> mongodump -d databaseName -c collectionName
 
