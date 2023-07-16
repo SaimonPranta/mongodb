@@ -17,7 +17,7 @@
 => mongodump -d databaseName -c collectionName
 
 # To restore/import single database
-=> mongorestore -d satabaseName ./filePath
+=> mongorestore -d databaseName ./filePath
 
 # To restore/import single collection
-=> mongorestore -d satabaseName ./filePath/*.bson
+=> mongorestore -d databaseName ./filePath/*.bson
