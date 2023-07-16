@@ -16,6 +16,23 @@
 # To create collection 
 => db.createCollection("collectionName")
 
+# To find data from collection 
+=> db.collectionName.find()
+
+# To insert one data to collection 
+=> db.collectionName.insertOne({name: "saimon", age: 24})
+
+# To insert many data to collection 
+=> db.collectionName.insertMany([
+  {
+  name: "saimon",
+  age: 24
+  },{
+  name: "pranta",
+  age: 23
+  }
+])
+
 # To delete database
 => db.dropDatabase()
 
