@@ -1,8 +1,20 @@
 # To show all database 
 => show dbs
 
-# To enter db
+# To enter database
 => use databaseName
+
+# To create database
+=> use databaseName
+
+#To show collections
+=> show collections
+
+# To enter collection 
+=> use collectionName
+
+# To create collection 
+=> db.createCollection("collectionName")
 
 # To delete database
 => db.dropDatabase()
