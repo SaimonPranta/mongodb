@@ -19,6 +19,32 @@
 # To find data from collection 
 => db.collectionName.find()
 
+# To filter data from collection
+=> db.collectionName.find({ 
+      status: "approved",
+      name: { $regex: new RegExp("symul kabir", "i")}, 
+       $or: [
+         { position: "Officar" },
+         { position: "Stap" }
+      ],
+    })
+=> db.collectionName.find({ 
+      status: "approved",
+      name: { $regex: 'symul kabir', $options: 'i' }, 
+       $or: [
+         { position: "Officar" },
+         { position: "Stap" }
+      ],
+    })
+=> db.collectionName.find({ 
+      status: "approved",
+      name: { $regex: /symul kabir/, $options: 'i' }, 
+       $or: [
+         { position: "Officar" },
+         { position: "Stap" }
+      ],
+    })
+
 # To insert one data to collection 
 => db.collectionName.insertOne({name: "saimon", age: 24})
 
@@ -36,13 +62,13 @@
 # To delete database
 => db.dropDatabase()
 
-# To store/export all database
+# To store/export/dump all database
 => mongodump
 
-# To store/export single database
+# To store/export/dump single database
 => mongodump -d databaseName
 
-# To store/export single collection 
+# To store/export/dump single collection 
 => mongodump -d databaseName -c collectionName
 
 # To restore/import single database
@@ -50,3 +76,6 @@
 
 # To restore/import single collection
 => mongorestore -d databaseName ./filePath/*.bson
+
+# To restore/import/dump remote database or atlas database
+=> mongodump --uri mongodb+srv://<username>:<PASSWORD>@made-up-url.5a45j.mongodb.net/<DATABASE>
