@@ -79,3 +79,11 @@
 
 # To restore/import/dump remote database or atlas database
 => mongodump --uri mongodb+srv://<username>:<PASSWORD>@made-up-url.5a45j.mongodb.net/<DATABASE>
+
+#To run mongodb foreground in linux
+=> mongod --config /etc/mongod.conf
+
+#To run mongodb foreground with pm2 server in linux
+=> pm2 start "mongod --config /etc/mongod.conf"
+
+
