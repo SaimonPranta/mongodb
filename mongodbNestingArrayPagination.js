@@ -31,7 +31,7 @@ User.findOne({ '_id': ObjectId(userId) })
 
 
 
-
+// This is mongodb data
 // {
 //   "_id": {
 //     "$oid": "650205290152c6d3eb546b09"
