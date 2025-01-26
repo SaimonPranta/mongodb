@@ -39,7 +39,7 @@ rs.initiate()
 ### Step 1: Stop MongoDB Service 
 brew services stop mongodb
 
-### Step 2: Edit `mongod.cfg` File (/usr/local/etc/mongod.conf)
+### Step 2: Edit `mongod.cfg` File (/usr/local/etc/mongod.conf or /opt/homebrew/etc/mongod.conf)
 replication:
   replSetName: "rs0"
 
