@@ -21,6 +21,9 @@ let adsList = await Ads.paginate(
             ],
           },
         ],
+        sort: {createdAt: -1},
+        limit: 15,  
+        page: 1,  
       }
     );
 
